@@ -1,0 +1,36 @@
+[user]
+	name = Amadeusz Starzykiewicz
+	email = megawebmaster@gmail.com
+[core]
+	excludesfile = ~/.gitignore
+	editor = vim
+	eol = lf
+	safecrlf = true
+	whitespace = tab-in-indent,tabwidth=4,space-before-tab
+	autocrlf = input
+	filemode = false
+[color]
+	ui = auto
+[apply]
+	ignorewhitespace = change
+[push]
+	default = simple
+[format]
+	pretty = short
+[pull]
+	ff = only
+[help]
+	autocorrect = 5
+[sequence]
+	editor = vim
+[alias]
+	last = log -1 --stat
+	cp = cherry-pick
+	co = checkout
+	ci = commit
+	cl = clone
+	st = status -sb
+	br = branch
+	unstage = reset HEAD --
+	dc = diff --cached
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all
