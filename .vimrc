@@ -5,6 +5,10 @@ set number
 set nobackup
 set nowritebackup
 set tabstop=2
-color desert
+colo industry 
 
-autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
+nmap <silent> <A-Up> :wincmd k<CR>
+nmap <silent> <A-Down> :wincmd j<CR>
+nmap <silent> <A-Left> :wincmd h<CR>
+nmap <silent> <A-Right> :wincmd l<CR>
+
