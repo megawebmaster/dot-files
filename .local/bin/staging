@@ -1,0 +1,3 @@
+#!/bin/bash
+sshrc staging-socialguide-$1.internal.talkwit.tv
+

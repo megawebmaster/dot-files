@@ -1,0 +1,31 @@
+if [ $(hostname | grep staging | wc -l) == 1 ]; then
+    env='staging'
+    alias cdsg="cd /var/www/socialguide-$env/current"
+fi
+if [ $(hostname | grep preprod | wc -l) == 1 ]; then
+    env='staging'
+    alias cdsg="cd /var/www/socialguide-preprod/current"
+fi
+if [ $(hostname | grep production | wc -l) == 1 ]; then
+    env='production'
+    alias cdsg="cd /var/www/socialguide-$env/current"
+fi
+if [ $(hostname | grep au | wc -l) == 1 ]; then
+    country='au'
+fi
+if [ $(hostname | grep it | wc -l) == 1 ]; then
+    country='it'
+fi
+if [ $(hostname | grep mx | wc -l) == 1 ]; then
+    country='mx'
+fi
+if [ $(hostname | grep us | wc -l) == 1 ]; then
+    country='us'
+fi
+
+export COUNTRY=$country
+export RAILS_ENV=$env
+alias suu="sudo -E su -p - ubuntu"
+alias rails="bundle exec rails"
+alias rake="bundle exec rake"
+

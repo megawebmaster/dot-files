@@ -1,0 +1,9 @@
+#!/bin/bash
+BACKUP_LOCATION="/var/run/media/adi/Backup"
+
+rsync -a --delete --quiet $HOME/Documents $BACKUP_LOCATION
+rsync -a --delete --quiet $HOME/Photographies $BACKUP_LOCATION
+rsync -a --delete --quiet $HOME/Projects $BACKUP_LOCATION
+rsync -a --delete --quiet $HOME/Audiobooks $BACKUP_LOCATION
+rsync -a --delete --quiet $HOME/E-Books $BACKUP_LOCATION
+

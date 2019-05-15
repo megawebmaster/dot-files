@@ -1,8 +1,1 @@
-/nbproject
-/project_data
-.idea/workspace.xml
-.idea/tasks.xml
-.idea/dictionaries
-chromedriver
-/upload_dir
-/old
+.env_keys

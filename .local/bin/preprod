@@ -1,0 +1,3 @@
+#!/bin/bash
+sshrc preprod-socialguide-$1.internal.talkwit.tv
+

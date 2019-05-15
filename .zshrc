@@ -31,6 +31,7 @@ _direnv_hook() {
 
 # Setup RVM
 source /usr/share/rvm/scripts/rvm
+source ~/.env_keys
 
 # Global variables
 SOCIALGUIDE_ENV_FILE=.test.local.env
