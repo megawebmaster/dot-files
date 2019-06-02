@@ -31,7 +31,15 @@ _direnv_hook() {
 
 # Setup RVM
 source /usr/share/rvm/scripts/rvm
+
+# Setup env keys
 source ~/.env_keys
+
+# Setup aliases
+alias sg='cd ~/Projects/socialguide'
+alias nsweb='cd ~/Projects/ns-web'
+alias rt='cd ~/Projects/retrotool.io'
+alias budget='cd ~/Projects/budget-receipts'
 
 # Global variables
 SOCIALGUIDE_ENV_FILE=.test.local.env
