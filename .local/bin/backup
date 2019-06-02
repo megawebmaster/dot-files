@@ -2,6 +2,8 @@
 BACKUP_LOCATION="/var/run/media/adi/Backup"
 
 rsync -a --delete --quiet $HOME/.ssh $BACKUP_LOCATION
+rsync -a --delete --quiet $HOME/.config $BACKUP_LOCATION
+rsync -a --delete --quiet $HOME/.local $BACKUP_LOCATION
 rsync -a --delete --quiet $HOME/Documents $BACKUP_LOCATION
 rsync -a --delete --quiet $HOME/Photographies $BACKUP_LOCATION
 rsync -a --delete --quiet $HOME/Projects $BACKUP_LOCATION
