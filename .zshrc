@@ -22,6 +22,7 @@ antigen apply
 
 # Git aliases
 alias ggrh='git reset --hard origin/$(current_branch)'
+alias gdc='git diff --cached'
 
 # Setup DirEnv
 eval "$(direnv hook zsh)"
