@@ -37,10 +37,13 @@ source /usr/share/rvm/scripts/rvm
 source ~/.env_keys
 
 # Setup aliases
-alias sg='cd ~/Projects/socialguide'
-alias nsweb='cd ~/Projects/ns-web'
-alias rt='cd ~/Projects/retrotool.io'
-alias budget='cd ~/Projects/budget-receipts'
+alias cdsg='cd ~/Projects/socialguide'
+alias cdnsw='cd ~/Projects/ns-web'
+alias cdrt='cd ~/Projects/retrotool.io'
+alias cdb='cd ~/Projects/budget-receipts'
+
+# DotFiles config
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Global variables
 SOCIALGUIDE_ENV_FILE=.test.local.env
