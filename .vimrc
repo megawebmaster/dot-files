@@ -5,7 +5,6 @@ set number
 set nobackup
 set nowritebackup
 set tabstop=2
-colo industry 
 
 nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>

@@ -8,8 +8,6 @@ antigen bundles <<BUNDLES
 	docker
 	archlinux
 	npm
-	rvm
-	ruby
 	command-not-found
 	zdharma/fast-syntax-highlighting
 	zsh-users/zsh-autosuggestions@master
@@ -30,15 +28,10 @@ _direnv_hook() {
   eval "$(direnv export zsh 2> >( egrep -v -e '^direnv: (loading|export|unloading)' ))"
 };
 
-# Setup RVM
-source /usr/share/rvm/scripts/rvm
-
 # Setup env keys
 source ~/.env_keys
 
 # Setup aliases
-alias cdsg='cd ~/Projects/socialguide'
-alias cdnsw='cd ~/Projects/ns-web'
 alias cdrt='cd ~/Projects/retrotool.io'
 alias cdb='cd ~/Projects/budget-receipts'
 
@@ -46,7 +39,6 @@ alias cdb='cd ~/Projects/budget-receipts'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Global variables
-SOCIALGUIDE_ENV_FILE=.test.local.env
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
 POWERLEVEL9K_TIME_ICON=\\uF017

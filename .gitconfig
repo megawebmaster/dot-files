@@ -1,6 +1,7 @@
 [user]
 	name = Amadeusz Starzykiewicz
 	email = megawebmaster@gmail.com
+	signingkey = 8DC814D217D8498E
 [core]
 	excludesfile = ~/.gitignore
 	editor = vim
@@ -34,5 +35,7 @@
 	unstage = reset HEAD --
 	dc = diff --cached
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all
-  cleanup = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
+  cleanup = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; git remote prune origin; }; f"
 
+[commit]
+	gpgsign = true
